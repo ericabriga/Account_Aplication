@@ -1,5 +1,3 @@
-package AccountApplication;
-
 import java.util.HashMap;
 
 import com.google.gson.Gson;
@@ -35,4 +33,16 @@ public class Service {
 		String json = gson.toJson(listAccount);
 		return json;
 	}
+
+
+	public int nameSearch(String firstname) {
+		int count = 0;
+		for(Account accounts : listAccount.values()) {
+			if(accounts.getFirstName().equals(firstname)) {
+				count++;
+			}
+		}
+		return count;
+	}
+
  }
