@@ -17,6 +17,12 @@ public class NameSearchTest {
 		int expected = 1;
 		int actual = service.nameSearch("Jay");
 		Assert.assertEquals(expected, actual);
-
+	}
+	@Test
+	public void nameSearchTest8() {
+		service.addAccount(jay);
+		int expected = 1;
+		int actual = service.nameSearch8("Jay");
+		Assert.assertEquals(expected, actual);
  }
 }
