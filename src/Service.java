@@ -45,4 +45,8 @@ public class Service {
 		return count;
 	}
 
+	public int nameSearch8(String firstname) {
+		//So, we get the values from the hashmap
+		return (int) listAccount.values().stream().filter(account -> account.getFirstName().equals(firstname)).count();
+	}
  }
