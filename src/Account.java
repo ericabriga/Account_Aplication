@@ -1,5 +1,3 @@
-package AccountApplication;
-
 public class Account {
 
 		private String firstName;
